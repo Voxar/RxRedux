@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxRedux" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-Xo-rgA">
+                                <rect key="frame" x="92.5" y="318.5" width="30" height="30"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmS-DR-aUq">
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nac-uK-6W4">
+                                <rect key="frame" x="255.5" y="318.5" width="30" height="30"/>
+                                <state key="normal" title="-"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vax-W9-kYh">
+                                <rect key="frame" x="166.5" y="276" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XmS-DR-aUq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5Xf-vJ-uxf"/>
+                            <constraint firstItem="XmS-DR-aUq" firstAttribute="top" secondItem="Vax-W9-kYh" secondAttribute="bottom" constant="26" id="8Tt-iu-YXB"/>
+                            <constraint firstItem="XmS-DR-aUq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Q96-iG-alG"/>
+                            <constraint firstItem="lqK-Xo-rgA" firstAttribute="centerY" secondItem="XmS-DR-aUq" secondAttribute="centerY" id="fUM-R9-ArR"/>
+                            <constraint firstItem="XmS-DR-aUq" firstAttribute="leading" secondItem="lqK-Xo-rgA" secondAttribute="trailing" constant="44" id="g1x-BX-7RZ"/>
+                            <constraint firstItem="nac-uK-6W4" firstAttribute="centerY" secondItem="XmS-DR-aUq" secondAttribute="centerY" id="q6X-ap-mJd"/>
+                            <constraint firstItem="nac-uK-6W4" firstAttribute="leading" secondItem="XmS-DR-aUq" secondAttribute="trailing" constant="47" id="qMD-78-p2U"/>
+                            <constraint firstItem="Vax-W9-kYh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rUH-j5-c0O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="XmS-DR-aUq" id="Sm0-Ri-6OL"/>
+                        <outlet property="messageLabel" destination="XmS-DR-aUq" id="I9z-PC-GjE"/>
+                        <outlet property="minusButton" destination="nac-uK-6W4" id="IVy-MF-YX1"/>
+                        <outlet property="plussButton" destination="lqK-Xo-rgA" id="ogd-wS-Z4x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="134"/>
+        </scene>
+    </scenes>
+</document>
